@@ -1,0 +1,60 @@
+2025-02-10 17:44:12,738 - INFO - package: mysql.connector.plugins
+2025-02-10 17:44:12,739 - INFO - plugin_name: mysql_native_password
+2025-02-10 17:44:12,740 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-10 17:44:12,746 - INFO - Connected to MySQL Host
+2025-02-10 17:44:22,767 - INFO - Closing down clientserver connection
+2025-02-10 23:56:35,496 - INFO - Starting data extraction process
+2025-02-10 23:56:35,551 - INFO - Access token fetched successfully
+2025-02-10 23:56:42,818 - INFO - Vald has been processed
+2025-02-10 23:56:48,955 - INFO - Hamza has been processed
+2025-02-10 23:56:50,078 - WARNING - Green Montana | Limit exceeded : waiting for 2*2s
+2025-02-10 23:56:54,487 - INFO - Green Montana has been processed
+2025-02-10 23:57:01,550 - WARNING - Jul | Limit exceeded : waiting for 2*1s
+2025-02-10 23:57:10,191 - WARNING - Jul | Limit exceeded : waiting for 2*2s
+2025-02-10 23:57:16,953 - INFO - Jul has been processed
+2025-02-10 23:57:20,816 - WARNING - La Fève | Limit exceeded : waiting for 2*2s
+2025-02-10 23:57:25,266 - INFO - La Fève has been processed
+2025-02-10 23:57:32,590 - WARNING - Booba | Limit exceeded : waiting for 2*1s
+2025-02-10 23:57:35,854 - INFO - Booba has been processed
+2025-02-10 23:57:40,117 - INFO - Damso has been processed
+2025-02-10 23:57:42,141 - WARNING - Orelsan | Limit exceeded : waiting for 2*1s
+2025-02-10 23:57:47,085 - INFO - Orelsan has been processed
+2025-02-10 23:57:47,601 - INFO - PNL has been processed
+2025-02-10 23:57:51,390 - WARNING - SCH | Limit exceeded : waiting for 2*1s
+2025-02-10 23:57:57,660 - INFO - SCH has been processed
+2025-02-10 23:58:00,433 - WARNING - Niska | Limit exceeded : waiting for 2*2s
+2025-02-10 23:58:08,152 - INFO - Niska has been processed
+2025-02-10 23:58:11,812 - WARNING - Heuss L'enfoiré | Limit exceeded : waiting for 2*1s
+2025-02-10 23:58:16,326 - INFO - Heuss L'enfoiré has been processed
+2025-02-10 23:58:17,960 - INFO - Kekra has been processed
+2025-02-10 23:58:21,242 - WARNING - Alpha Wann | Limit exceeded : waiting for 2*1s
+2025-02-10 23:58:27,827 - INFO - Alpha Wann has been processed
+2025-02-10 23:58:28,985 - INFO - Ziak has been processed
+2025-02-10 23:58:30,553 - WARNING - Gazo | Limit exceeded : waiting for 2*2s
+2025-02-10 23:58:39,979 - INFO - Gazo has been processed
+2025-02-10 23:58:42,104 - WARNING - Freeze corleone | Limit exceeded : waiting for 2*1s
+2025-02-10 23:58:48,941 - INFO - Freeze corleone has been processed
+2025-02-10 23:58:50,647 - WARNING - Ninho | Limit exceeded : waiting for 2*2s
+2025-02-10 23:59:01,791 - WARNING - Ninho | Limit exceeded : waiting for 2*1s
+2025-02-10 23:59:05,644 - INFO - Ninho has been processed
+2025-02-10 23:59:11,003 - WARNING - Nekfeu | Limit exceeded : waiting for 2*2s
+2025-02-10 23:59:16,852 - INFO - Nekfeu has been processed
+2025-02-10 23:59:22,068 - WARNING - Kaaris | Limit exceeded : waiting for 2*1s
+2025-02-10 23:59:24,721 - INFO - Kaaris has been processed
+2025-02-10 23:59:24,787 - INFO - Data extraction process completed
+2025-02-10 23:59:24,787 - INFO - Starting data transformation process
+2025-02-10 23:59:25,256 - INFO - Artists dataframe created
+2025-02-10 23:59:25,351 - INFO - Featurings dataframe created
+2025-02-10 23:59:45,543 - INFO - Artists_Featurings dataframe created
+2025-02-10 23:59:45,545 - INFO - Data transformation process completed
+2025-02-10 23:59:45,545 - INFO - Starting data loading process
+2025-02-10 23:59:45,682 - INFO - Connected to MySQL Host
+2025-02-10 23:59:45,705 - INFO - Database spotify_data_02_11 created
+2025-02-10 23:59:45,805 - INFO - Table artists created
+2025-02-10 23:59:45,868 - INFO - Table featurings created
+2025-02-10 23:59:45,953 - INFO - Table artist_featurings created
+2025-02-10 23:59:59,584 - INFO - Data inserted into artists table
+2025-02-11 00:00:11,150 - INFO - Data inserted into featurings table
+2025-02-11 00:00:33,321 - INFO - Data inserted into artist_featurings table
+2025-02-11 00:00:33,321 - INFO - Data loading process finished
+2025-02-11 00:00:34,252 - INFO - Closing down clientserver connection

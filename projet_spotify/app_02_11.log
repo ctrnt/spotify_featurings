@@ -1,0 +1,93 @@
+2025-02-11 00:38:46,835 - INFO - package: mysql.connector.plugins
+2025-02-11 00:38:46,836 - INFO - plugin_name: mysql_native_password
+2025-02-11 00:38:46,837 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 00:38:46,843 - INFO - Connected to MySQL Host
+2025-02-11 00:38:58,946 - INFO - Closing down clientserver connection
+2025-02-11 03:39:01,877 - INFO - Connected to MySQL Host
+2025-02-11 03:39:05,200 - INFO - Closing down clientserver connection
+2025-02-11 03:40:34,739 - INFO - Connected to MySQL Host
+2025-02-11 03:40:37,843 - INFO - Closing down clientserver connection
+2025-02-11 03:42:21,553 - INFO - Connected to MySQL Host
+2025-02-11 03:42:24,814 - INFO - Closing down clientserver connection
+2025-02-11 03:43:52,787 - INFO - Connected to MySQL Host
+2025-02-11 03:43:59,847 - INFO - Closing down clientserver connection
+2025-02-11 04:06:25,718 - INFO - package: mysql.connector.plugins
+2025-02-11 04:06:25,719 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:06:25,721 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:06:25,726 - INFO - Connected to MySQL Host
+2025-02-11 04:06:34,820 - INFO - Closing down clientserver connection
+2025-02-11 04:07:54,678 - INFO - package: mysql.connector.plugins
+2025-02-11 04:07:54,679 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:07:54,680 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:07:54,685 - INFO - Connected to MySQL Host
+2025-02-11 04:08:15,996 - INFO - Closing down clientserver connection
+2025-02-11 04:29:33,599 - INFO - package: mysql.connector.plugins
+2025-02-11 04:29:33,601 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:29:33,602 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:29:33,617 - INFO - Connected to MySQL Host
+2025-02-11 04:29:36,876 - INFO - Closing down clientserver connection
+2025-02-11 04:30:54,743 - INFO - package: mysql.connector.plugins
+2025-02-11 04:30:54,744 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:30:54,745 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:30:54,750 - INFO - Connected to MySQL Host
+2025-02-11 04:31:01,936 - INFO - Closing down clientserver connection
+2025-02-11 04:33:00,874 - INFO - package: mysql.connector.plugins
+2025-02-11 04:33:00,875 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:33:00,876 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:33:00,880 - INFO - Connected to MySQL Host
+2025-02-11 04:33:08,196 - INFO - Closing down clientserver connection
+2025-02-11 04:34:24,980 - INFO - package: mysql.connector.plugins
+2025-02-11 04:34:24,981 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:34:24,982 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:34:24,987 - INFO - Connected to MySQL Host
+2025-02-11 04:34:32,500 - INFO - Closing down clientserver connection
+2025-02-11 04:37:09,974 - INFO - package: mysql.connector.plugins
+2025-02-11 04:37:09,975 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:37:09,976 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:37:09,981 - INFO - Connected to MySQL Host
+2025-02-11 04:37:19,197 - INFO - Closing down clientserver connection
+2025-02-11 04:54:40,019 - INFO - package: mysql.connector.plugins
+2025-02-11 04:54:40,020 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:54:40,021 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:54:40,026 - INFO - Connected to MySQL Host
+2025-02-11 04:54:49,829 - INFO - Closing down clientserver connection
+2025-02-11 04:57:11,948 - INFO - package: mysql.connector.plugins
+2025-02-11 04:57:11,949 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:57:11,950 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:57:11,956 - INFO - Connected to MySQL Host
+2025-02-11 04:57:20,935 - INFO - Closing down clientserver connection
+2025-02-11 04:59:01,184 - INFO - package: mysql.connector.plugins
+2025-02-11 04:59:01,185 - INFO - plugin_name: mysql_native_password
+2025-02-11 04:59:01,185 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 04:59:01,190 - INFO - Connected to MySQL Host
+2025-02-11 04:59:09,984 - INFO - Closing down clientserver connection
+2025-02-11 05:00:04,450 - INFO - package: mysql.connector.plugins
+2025-02-11 05:00:04,451 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:00:04,452 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:00:04,457 - INFO - Connected to MySQL Host
+2025-02-11 05:00:14,275 - INFO - Closing down clientserver connection
+2025-02-11 05:02:48,173 - INFO - package: mysql.connector.plugins
+2025-02-11 05:02:48,174 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:02:48,175 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:02:48,180 - INFO - Connected to MySQL Host
+2025-02-11 05:02:57,289 - INFO - Closing down clientserver connection
+2025-02-11 05:05:04,521 - INFO - package: mysql.connector.plugins
+2025-02-11 05:05:04,522 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:05:04,523 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:05:04,528 - INFO - Connected to MySQL Host
+2025-02-11 05:05:13,750 - INFO - Closing down clientserver connection
+2025-02-11 05:07:52,741 - INFO - package: mysql.connector.plugins
+2025-02-11 05:07:52,742 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:07:52,743 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:07:52,747 - INFO - Connected to MySQL Host
+2025-02-11 05:08:02,273 - INFO - Closing down clientserver connection
+2025-02-11 05:10:37,076 - INFO - package: mysql.connector.plugins
+2025-02-11 05:10:37,078 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:10:37,079 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:10:37,083 - INFO - Connected to MySQL Host
+2025-02-11 05:10:46,777 - INFO - Closing down clientserver connection
+2025-02-11 05:12:15,602 - INFO - package: mysql.connector.plugins
+2025-02-11 05:12:15,603 - INFO - plugin_name: mysql_native_password
+2025-02-11 05:12:15,604 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-02-11 05:12:15,608 - INFO - Connected to MySQL Host
+2025-02-11 05:12:25,668 - INFO - Closing down clientserver connection
