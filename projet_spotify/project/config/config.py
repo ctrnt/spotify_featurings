@@ -15,3 +15,5 @@ JDBC_DRIVER_PATH = os.getenv('JDBC_DRIVER_PATH')
 ARTISTS = os.getenv('ARTISTS').split(',')
 
 DATABASE_NAME = os.getenv('DATABASE_NAME')
+
+TOPIC_NAME = os.getenv('TOPIC_NAME')
