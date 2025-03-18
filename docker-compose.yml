@@ -1,0 +1,78 @@
+version: '3.8'
+
+services:
+  # Service de base de données PostgreSQL
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    ports:
+      - "5432:5432"
+    networks:
+      - spotify_network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Service d'initialisation d'Airflow
+  airflow-init:
+    image: apache/airflow:2.5.1
+    container_name: airflow-init
+    command: ["bash", "-c", "until pg_isready -h postgres -p 5432; do echo 'Waiting for PostgreSQL...'; sleep 5; done; airflow db init && airflow users create --role Admin --username admin --password admin --firstname Admin --lastname User --email admin@example.com"]
+    depends_on:
+      - postgres
+    networks:
+      - spotify_network
+    restart: "no"
+    volumes:
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project/dags:/opt/airflow/dags
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project:/app
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+
+  # Service du webserver Airflow
+  airflow-webserver:
+    image: apache/airflow:2.5.1
+    container_name: webserver
+    command: ["airflow", "webserver"]
+    ports:
+      - "8080:8080"
+    depends_on:
+      - airflow-init
+    networks:
+      - spotify_network
+    restart: always
+    volumes:
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project/dags:/opt/airflow/dags
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project:/app
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+
+  # Service du scheduler Airflow
+  airflow-scheduler:
+    image: apache/airflow:2.5.1
+    container_name: scheduler
+    command: ["airflow", "scheduler"]
+    depends_on:
+      - airflow-init
+    networks:
+      - spotify_network
+    restart: always
+    volumes:
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project/dags:/opt/airflow/dags
+      - /home/clem/Desktop/sandbox/spotify_featurings/projet_spotify/project:/app
+    environment:
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+
+networks:
+  spotify_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
