@@ -1,15 +1,15 @@
 import os
 import sys
+import json
 
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..')))
+from confluent_kafka import Consumer, KafkaException
 
 from project.scripts.artist import *
 from project.scripts.spotify_connector import *
 from project.config.logging_config import setup_logging
-from project.config.config import JDBC_DRIVER_PATH, ARTISTS
+from project.config.config import JDBC_DRIVER_PATH, TOPIC_NAME
 
 def extract():
     logger = setup_logging()
@@ -18,13 +18,9 @@ def extract():
         spark = SparkSession.builder \
             .appName("SpotifySpark") \
             .config("spark.jars", JDBC_DRIVER_PATH) \
-            .config("spark.executor.memory", "2g") \
-            .config("spark.driver.memory", "2g") \
-            .config("spark.executor.cores", "2") \
-            .config("spark.driver.cores", "2") \
-            .master("local[2]") \
+            .master("local[*]") \
             .getOrCreate()
-
+              
         logger.info("Starting data extraction process")
 
         api_connector = Connector()
@@ -39,14 +35,33 @@ def extract():
         
         artists_df = spark.createDataFrame([], schema)
 
-        for artist_name in ARTISTS:
-            artist_instance = Artist(headers, spark, schema)
-            artist_instance.get_artist_id(artist_name)
-            artist_instance.get_artist_features()
+        consumer_config = {
+            'bootstrap.servers': 'localhost:9092',  
+            'group.id': 'spotify-consumer-group',  
+            'auto.offset.reset': 'earliest'  
+        }
+        consumer = Consumer(consumer_config)
 
-            artists_df = artists_df.union(artist_instance.df)
-        
-        logger.info("Data extraction process completed")
+        def basic_consume_loop(consumer, topic):
+            consumer.subscribe(topic)
+
+            msg = consumer.poll(timeout=1.0)
+
+            if msg is None:
+                None
+
+            if msg.error():
+                raise KafkaException(msg.error())
+
+            else:
+                artist_name = msg.value().decode('utf-8')
+                artist_instance = Artist(headers, spark, schema)
+                artist_instance.get_artist_id(artist_name)
+                artist_instance.get_artist_features()
+
+                logger.info(f"{artist_name}:{artist_instance.df.count()}")
+
+        basic_consume_loop(consumer, TOPIC_NAME)
 
         return spark, artists_df
 
