@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+pyspark = "*"
+python-dotenv = "*"
+mysql-connector-python = "*"
+sqlalchemy = "*"
+confluent-kafka = "*"
+apache-airflow = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+python_full_version = "3.9.21"
